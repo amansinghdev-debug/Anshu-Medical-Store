@@ -16,7 +16,7 @@ Anshu Medical Store is a trusted pharmacy located in India, known for reliable s
 
 ## 🌐 Live Website
 
-[🔗 Visit Now](https://yourusername.github.io/anshu-medical-store/)  
+[🔗 Visit Now](https://amansinghdev-debug.github.io/Anshu-Medical-Store/)  
 > Replace `yourusername` with your actual GitHub username.
 
 ## 📁 Project Structure
