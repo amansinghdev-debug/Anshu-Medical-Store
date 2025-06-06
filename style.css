@@ -1,32 +1,130 @@
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-      color: #333;
-    }
-    header .left{
-        /* display: flex; */
-        height: 85px;
-        background-color: #001180;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+:root{
+    --primary--color: rgb(37, 77, 220);
+}
+.upper-box{
+    display: flex;
+    background-color: var(--primary--color);
+    padding: 10px;
+    width: 100%;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.head >p{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    font-style: inherit;
+}
+.logo{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 7px;
+    margin-right: 15px;
+    padding: 10px;
+    width: 250px;
+    /* background-color: blue; */
+}
+.logo >p{
+    /* background-color: aqua; */
+    width: 100%;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.navLinks{
+    display: flex;
+    gap: 20px;
+}
+.buyNow{
+    all: unset;
+    padding: 8px 30px;
+    font-size: 14px;
+    background-color: var(--primary--color);
+}
+.category{
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    background-color: var(--primary--color);
+    /* width: 100%; */
+    height: 45px;
+    gap: 5px;
+}
+.toggle{
+    /* width: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: white;
+}
+.category >select{
+    background-color: var(--primary--color);
+    width: max-content;
+    height: 80%;
+    color: white;
+    border-radius: 5px;
+}
+.search{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    width: 340px;
+    gap: 5px;
+    background-color: white;
+    height: 35px;
+    border-radius: 224px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.search > input{
+    all: unset;
+    font-size: 14px;
+    width: 100%;
+}
+/* .toggle{ display: none; } removed to avoid empty ruleset */
+
+@media (max-width: 768px) {
+    .navLinks{
+        top: 0;
+        left: -100%;
+        flex-direction: column;
         color: white;
-        padding: 14px;
-        gap: 0;
-        text-align: center;
+        position: absolute; 
+        background-color: rgb(17, 17, 17); height: 100vh; width: 100%;
+
     }
-    
-    header nav {
-      background-color: #0f0066;
-      padding: 10px;
-      text-align: center;
+    .navLinks.active{
+        left: 0;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+    .toggle{
+        display: flex;
     }
-    .section {
+}
+
+.section {
       max-width: 1000px;
       margin: 40px auto;
       background-color: #ffffff;
