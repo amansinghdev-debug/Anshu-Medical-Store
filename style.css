@@ -67,6 +67,8 @@ a{
 .buyNow{
     all: unset;
     padding: 8px 30px;
+    color: white;
+    border-radius: 10px;
     font-size: 14px;
     background-color: var(--primary--color);
 }
