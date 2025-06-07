@@ -12,6 +12,13 @@ body{
 :root{
     --primary--color: rgb(37, 77, 220);
 }
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+
 .upper-box{
     display: flex;
     background-color: var(--primary--color);
